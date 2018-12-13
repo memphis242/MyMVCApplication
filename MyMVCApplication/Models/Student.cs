@@ -9,6 +9,7 @@ namespace MyMVCApplication.Models
     {
         public int StudentID { get; set; }
 
+        [Display( Name="Name" )]
         public string StudentName { get; set; }
 
         public int Age { get; set; }
