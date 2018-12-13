@@ -37,7 +37,7 @@ namespace MyMVCApplication.Controllers
         public ActionResult Edit(Student student)
         {
             //Find index of student in list
-            int index = studentList.IndexOf((studentList.Find(std => std.StudentID == student.StudentID)));
+            int index = studentList.IndexOf(studentList.Find(std => std.StudentID == student.StudentID));
 
             //Edit values
             studentList.ElementAt(index).StudentID = student.StudentID;
